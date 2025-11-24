@@ -11,40 +11,75 @@ h6 {
 .myLink {
     display: none
 }
-  /* 新增左上區塊的樣式 */
-        .tyContainer {
-            border: 2px solid white;
-            width: 100px;
-            position: fixed;
-            z-index: 1;
-        }
 
-        .tyLeftSide {
-            left: 0;
-            top: 10vh;
-        }
+/* 新增左上區塊的樣式 */
+.tyContainer {
+    border: 2px solid white;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+}
 
-        .tyContainer div {
-            border: 1px solid white;
-            color: white;
-            background-color: black;
-            width: 100%;
-            height: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.tyLeftSide {
+    left: 0;
+    top: 10vh;
+}
 
-        .tyContainer a div:hover {
-            background-color: #f44336;
-        }
+.tyContainer div {
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .tyContainer a {
-            text-decoration: none;
-        }
+.tyContainer a div:hover {
+    background-color: #f44336;
+}
 
-        .tyContainer .tyTitle {
-            background-color: gray;
-            height: 50px;
-        }
+.tyContainer a {
+    text-decoration: none;
+}
 
+.tyContainer .tyTitle {
+    background-color: gray;
+    height: 50px;
+}
+
+/* 新增彈出視窗的樣式 */
+#tyModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tyModalContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.tyClose {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tyClose:hover,
+.tyClose:focus {
+    color: #000;
+    cursor: pointer;
+}
